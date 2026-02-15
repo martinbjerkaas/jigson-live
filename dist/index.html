@@ -7,13 +7,13 @@
 
 <head>
     <!-- change this to your project name -->
-    <title>eframe template</title>
+    <title>Jigson</title>
 
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from '/jigson-live/jigson-628c93edb51a0b3c.js';
-const wasm = await init({ module_or_path: '/jigson-live/jigson-628c93edb51a0b3c_bg.wasm' });
+import init, * as bindings from '/jigson-live/jigson-e2e5bd1b7e978deb.js';
+const wasm = await init({ module_or_path: '/jigson-live/jigson-e2e5bd1b7e978deb_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -127,7 +127,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/jigson-live/jigson-628c93edb51a0b3c.js" crossorigin="anonymous" integrity="sha384-6KYRV4ooDvj6JKUbgsmIk5tV+dVs8XxiuMpYyK9S5mIWrZel2qPWGszgrz4PbDes"><link rel="preload" href="/jigson-live/jigson-628c93edb51a0b3c_bg.wasm" crossorigin="anonymous" integrity="sha384-ntATuWpX2FibEDDdU+dB/ZnVp/ztkExPUy7UgXVaforq3A5fp+PVphFKXLkcfNa7" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/jigson-live/jigson-e2e5bd1b7e978deb.js" crossorigin="anonymous" integrity="sha384-6KYRV4ooDvj6JKUbgsmIk5tV+dVs8XxiuMpYyK9S5mIWrZel2qPWGszgrz4PbDes"><link rel="preload" href="/jigson-live/jigson-e2e5bd1b7e978deb_bg.wasm" crossorigin="anonymous" integrity="sha384-vK22aMQnH7dFdICxfNBi4d9clKy18y2HDemgTZ3S1vhmj0CgwjETtilwZ3yDuGlP" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
