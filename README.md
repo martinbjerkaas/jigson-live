@@ -62,7 +62,7 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] Dataimporter: Fix bug thats cause the importer view to get stuck when trying to drop an unsupported format. Handle this better.
 - [ ] Dataimporter: Make the json pattern matcing more robust. Does not match on many newline and spaces.
 - [ ] DataImporter: Add support for XLSX files.
-- [ ] DataImporter: Add support for copy from Excel. XML/HTML clipboard metadata
+- [X] DataImporter: Add support for copy from Excel. XML/HTML clipboard metadata
 - [X] DataImporter: Add support for .knxproj files. XML parse -> traverse to project.xml+0.xml. 
 - [ ] DataImporter: Fix a bug where importing a .knxproj file, then importing a json/csv, keeps the KNX meta data shown. 
 
