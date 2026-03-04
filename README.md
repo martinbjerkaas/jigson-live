@@ -72,6 +72,7 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] Schema mapper: Split the view into three columns making more space between source->schema.
 - [X] Schema mapper: Add a "Clear all" function as a button.
 - [X] Schema mapper: Divide the source chips into two so property and value is more visually separated.
+- [ ] Schema mapper: Truncate the value if the value is absurdly long.
 - [ ] Schema mapper: Change the height of each source property chip to match the schema property chips.
 - [ ] Schema mapper: Polish the view UI.
 
@@ -111,8 +112,12 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [ ] General: Add detailed status / debug in the footer
 
 - [ ] Templates: Add the option to export templates
+
 - [ ] Diff viewer: Add an option to export diff file. Export as html table for documentation, or a json that could be used to revert changes/apply to merge.
 - [ ] Diff viewer: Add an option to select a property to be used as title in diff cards.
 - [ ] Diff viewer: Add filtering by change and property values.
+- [X] Diff viewer: Separate the comparison view into different modes. Grouped and table.
+- [X] Diff viewer: Add a table card DiffComparisonMode that shows each property in a horizontal line.
+- [X] Diff viewer: Implement drag and drop headers into exclusion array to exclude properties from comparison.
 
 - [ ] Other: Investigate possibility to add alias in schema. Allowing for the schema mapper to match by alias, not only propertyname.
