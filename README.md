@@ -44,13 +44,14 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] Create export stage/view that allows to preview final json
 - [X] Implement basic json diff viewer. Load from table, drag&drop file or manual input as both source/modified. View 
 - [X] Add a changelog tracking versions and main changes.
-- [ ] Implement merge functionality. Maybe added as a feature in diff view.
+- [X] Implement merge functionality. Maybe added as a feature in diff view.
 - [ ] Implement transform data stage. needs planning. Add conditions, conversion and formules
 - [ ] Create global styling / constants to make it easier to tweak. Much inline styling for now.
 - [ ] Implement undo/redo functionality for commands. Especially for bulk edit.
 - [ ] Add extended metadata to cells for creating columns that do calculations etc without affecting the final output.
 - [ ] Rework the command pattern. As for now, all commands are defined in commands. Implement command as trait with dispatch
 - [ ] Separate alot of reusable items as components. (toolbar buttons, drag and drop zones)
+- [ ] Merge the diff viewer and merge tool and incorporate it into the core table builder.
 
 
 ### Bugs / improvements
@@ -60,7 +61,7 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] DataImporter: Add an option to create a new table based on just schema from the import page
 - [X] DataImporter: Clear the table data on new file import.
 - [X] Dataimporter: Fix bug thats cause the importer view to get stuck when trying to drop an unsupported format. Handle this better.
-- [ ] Dataimporter: Make the json pattern matcing more robust. Does not match on many newline and spaces.
+- [X] Dataimporter: Make the json pattern matcing more robust. Does not match on many newline and spaces.
 - [ ] DataImporter: Add support for XLSX files.
 - [X] DataImporter: Add support for copy from Excel. XML/HTML clipboard metadata
 - [X] DataImporter: Add support for .knxproj files. XML parse -> traverse to project.xml+0.xml. 
@@ -121,3 +122,12 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] Diff viewer: Implement drag and drop headers into exclusion array to exclude properties from comparison.
 
 - [ ] Other: Investigate possibility to add alias in schema. Allowing for the schema mapper to match by alias, not only propertyname.
+
+
+Merge tool:
+For fields within an existing (matched) object:
+- Field in both, modified different, not locked -> Updated: modified value in final
+- Field in both, modified different, locked -> Locked: source value in final (orange)
+- Field in both, same value -> Unchanged: source value in final
+- Field only in source -> SourceOnly: source value in final
+- Field only in modified -> ModifiedOnly: included in the final
