@@ -3,7 +3,7 @@
 A json editor that is written purely in Rust with egui/eframe framework for UI. 
 Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 
-## Demo
+## Live demo
 [Link to Github pages](https://martinbjerkaas.github.io/jigson-live/)
 
 ## Workflow
@@ -46,11 +46,11 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] Add a changelog tracking versions and main changes.
 - [X] Implement merge functionality. Maybe added as a feature in diff view.
 - [ ] Implement transform data stage. needs planning. Add conditions, conversion and formules
-- [ ] Create global styling / constants to make it easier to tweak. Much inline styling for now.
+- [X] Create global styling / constants to make it easier to tweak. Much inline styling for now.
 - [ ] Implement undo/redo functionality for commands. Especially for bulk edit.
 - [ ] Add extended metadata to cells for creating columns that do calculations etc without affecting the final output.
-- [ ] Rework the command pattern. As for now, all commands are defined in commands. Implement command as trait with dispatch
-- [ ] Separate alot of reusable items as components. (toolbar buttons, drag and drop zones)
+- [X] Rework the command pattern. As for now, all commands are defined in commands. Implement command as trait with dispatch
+- [X] Separate alot of reusable items as components. (toolbar buttons, drag and drop zones)
 - [ ] Merge the diff viewer and merge tool and incorporate it into the core table builder.
 
 
@@ -90,7 +90,7 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] Table editor: Change the add row slider to an input box.
 - [X] Table editor: Fix delete column. Must be able to select column, now it deletes the first index
 - [X] Table editor: Fix rename column. Now it only gets the first index.
-- [X] Table editor: Add a function to reorder columns på dragging the column headers.
+- [X] Table editor: Add a function to reorder columns pSå dragging the column headers.
 - [ ] Table editor: Fix bug when select all -> filter, keeps all total rows selected
 - [ ] Table editor: Fix bug where object editor doesnt pretty print object anymore.
 - [ ] Table editor: Add option to show row numbers.
