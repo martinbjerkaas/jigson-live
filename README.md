@@ -83,7 +83,7 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [ ] Table editor: Add some space under the table so the horizontal scroll doesnt get focus so quickly.
 - [ ] Table editor: Add the option to edit the column daata type in edit_column modal using json types.
 - [ ] Table editor: Center all the checkboxes in the columns. Should be consistant when resizing column.
-- [ ] Table editor: Resize all the combobox widths when resizing the columns.
+- [X] Table editor: Resize all the combobox widths when resizing the columns.
 - [X] Table editor: Bulk edit doesnt take account for the column data type it seems. Bools are stored as string.
 - [ ] Table editor: Add metadata with enums in bulk_editor modal. Combobox for enums, booleans.
 - [X] Table editor: Add an option to modify the current schema in table editor if a schema is loaded.
@@ -91,7 +91,7 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 - [X] Table editor: Fix delete column. Must be able to select column, now it deletes the first index
 - [X] Table editor: Fix rename column. Now it only gets the first index.
 - [X] Table editor: Add a function to reorder columns pSå dragging the column headers.
-- [ ] Table editor: Fix bug when select all -> filter, keeps all total rows selected
+- [X] Table editor: Fix bug when select all -> filter, keeps all total rows selected
 - [ ] Table editor: Fix bug where object editor doesnt pretty print object anymore.
 - [ ] Table editor: Add option to show row numbers.
 - [ ] Table editor: Implement freezing columns.
@@ -102,7 +102,7 @@ Compiles for native(Linux) and WebAssembly. Windows is not tested yet.
 
 - [ ] Schema builder: Add support for more validation rules in schemabuilder: pattern (regex), min/max, formats ++
 - [X] Schema builder: Add the option to export schemas
-- [ ] Schema builder: Add better handling of enums with description. Const+OneOf. (enum - const.description)
+- [X] Schema builder: Add better handling of enums with description. Const+OneOf. (enum - const.description)
 - [ ] Schema builder: Add support for type in arrays and objects.
 - [ ] Schema builder: Add support for uniqueitems in array, pref. on certain properties.
 - [ ] Schema builder: Implement drag and drop order of schema properties.
